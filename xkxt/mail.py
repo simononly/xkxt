@@ -3,10 +3,10 @@
 
 import smtplib
 from email.mime.text import MIMEText
-mailto_list=["eling_mail@163.com"]
+mailto_list=["ell@163.com"]
 mail_host="smtp.163.com"  #设置服务器
-mail_user="eling_mail"    #用户名
-mail_pass="xpuilrlpdlcwzzct"   #口令
+mail_user="eli"    #用户名
+mail_pass="xct"   #口令
 mail_postfix="163.com"  #发件箱的后缀
 
 def send_mail(to_list,sub,content):  #to_list：收件人；sub：主题；content：邮件内容
@@ -26,7 +26,7 @@ def send_mail(to_list,sub,content):  #to_list：收件人；sub：主题；conte
         print str(e)
         return False
 if __name__ == '__main__':
-    if send_mail(mailto_list,"hello","<a href='http://www.nankai.edu.cn'>南开大学测试邮件</a>"):
+    if send_mail(mailto_list,"hello","<a href='http://www.edu.cn'>测试邮件</a>"):
         print "发送成功"
     else:
         print "发送失败"
