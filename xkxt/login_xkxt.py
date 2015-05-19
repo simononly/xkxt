@@ -113,7 +113,7 @@ def login_to_xkxt(userinfo):
 
 
 if __name__=='__main__':
-    a=['1312618','153542']
+    a=['','']
     login_to_xkxt(a)
 
 
